@@ -6,7 +6,7 @@ import { Footer } from "./MyComponents/Footer"
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#0E0E0E] text-white">
       <Header />
       <Main />
       <Footer />
