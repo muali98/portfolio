@@ -41,7 +41,7 @@ export const Main = () => {
 
                     {/* content */}
                     <div className='m-10'>
-                        <p className="">Top-sellers in tsfsdhe past week!</p>
+                        <p className="">Top-sellers in tsfsdhe past week! My test</p>
                         <p className="">Top-sellers in tsfsdhe past week!</p>
                         <p className="">Top-sellers in tsfsdhe past week!</p>
                         <p className="">Top-sellers in tsfsdhe past week!</p>
