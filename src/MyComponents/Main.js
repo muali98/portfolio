@@ -1,6 +1,6 @@
 import React from 'react'
 import Image1 from "./../Media/1.png"
-import Image2 from "./../Media/2.png"
+// import Image2 from "./../Media/2.png"
 import Resume from "./../Media/Resume.pdf"
 
 export const Main = () => {
@@ -17,7 +17,7 @@ export const Main = () => {
             </div>
 
             <h1 className="mt-20 mb-5 tracking-widest text-red-100 text-center text-4xl">↓ Resume ↓</h1>
-            <iframe src={Resume} width="100%" className="h-screen drop-shadow-[0_35px_30px_rgba(0,0,0,.9)]" />
+            <iframe src={Resume} title="Resume" width="100%" className="h-screen" />
 
         </>
     )
