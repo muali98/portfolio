@@ -6,8 +6,7 @@ import Resume from "./../Media/Resume.pdf"
 export const Main = () => {
     return (
         <>
-            <h1 className="text-red-400 text-center text-xl tracking-wide">This website is under development by Muhammad Ali, he is currently extremely busy with telecom core network projects!</h1>
-            <h1 className="text-red-400 text-center text-xl tracking-wide">Until the full website is coded, please scroll down to see the resume!</h1>
+            <h1 className="text-red-400 text-center text-xl tracking-wide">This website is under development by Muhammad Ali, he is currently extremely busy with telecom core network projects! &emsp;  &ensp; Until the full website is coded, please scroll down to see the resume!</h1>
             <div className='md:flex'>
                 {/* <div className='center'>
                     <h1>Electronics/Embedded Systems</h1>
