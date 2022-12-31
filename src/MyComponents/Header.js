@@ -13,14 +13,14 @@ export const Header = () => {
 
   return (
     <nav className="border-b border-gray-700 bg-nav ">
-      <div className='flex items-center justify-between max-w-[1150px] mx-auto px-3 '>
+      <div className='flex items-center justify-between mx-auto px-3'>
 
-        <div className='flex tracking-widest py-3 cursor-pointer'>
+        <div className='flex tracking-widest py-3 cursor-pointer ml-10'>
           <h2 className='text-xs font-medium text-gray-100 font-Oxygen'>Muhammad Ali</h2>
         </div>
 
 
-        <div className='flex tracking-wide py-3 cursor-pointer'>
+        <div className='flex tracking-wide py-3 cursor-pointer mr-10'>
           <ul className='flex text-xs items-center font-normal text-gray-200'>
             <li className='ml-4 mx-1 hover:text-gray-400'>Home</li>
             <li className='hidden lg:flex ml-4 mr-1 hover:text-gray-400'>Education</li>
@@ -29,16 +29,17 @@ export const Header = () => {
             <li className='hidden lg:flex ml-4 hover:text-gray-400'>Projects</li>
             <li className='hidden lg:flex ml-4 hover:text-gray-400'>Skills</li>
             <li className='hidden lg:flex ml-4 hover:text-gray-400'>Leadership</li>
-            <li className='hidden md:flex ml-4 hover:text-gray-400'>Courses</li>
+            <li className='hidden lg:flex ml-4 hover:text-gray-400'>Courses</li>
             <li className='hidden lg:flex ml-4 hover:text-gray-400'>Gallery</li>
             <li className='ml-4 hover:text-gray-400'>Contact</li>
           </ul>
 
           <div onClick={handleNav} className="ml-4 block lg:hidden">
             <AiOutlineMenu size={20} className='fill-gray-200 hover:fill-gray-400' />
-
           </div>
+
         </div>
+
       </div>
       <div className={!nav ? 'fixed right-1 mt-1 w-[40%] text-s tracking-wider cursor-pointer h-30 font-normal' : 'hidden'}>
         <ul className='cursor-pointer rounded-md text-gray-100 border border-gray-900 bg-[#212121]'>

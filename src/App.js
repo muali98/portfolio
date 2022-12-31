@@ -6,12 +6,12 @@ import { Footer } from "./MyComponents/Footer"
 
 function App() {
   return (
-    <div className="bg-body text-white">
-      <Header />
-      {/* <div className="max-w-[1150px] mx-auto"> */}
+    <div className="bg-body">
+      <div className="text-white max-w-[1380px] mx-auto">
+        <Header />
         <Main />
         <Footer />
-      {/* </div> */}
+      </div>
     </div>
   );
 }
