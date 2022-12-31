@@ -15,12 +15,12 @@ export const Header = () => {
     <nav className="border-b border-gray-700 bg-nav ">
       <div className='flex items-center justify-between mx-auto px-3'>
 
-        <div className='flex tracking-widest py-3 cursor-pointer ml-10'>
+        <div className='flex tracking-widest py-3 cursor-pointer ml-2 lg:ml-10'>
           <h2 className='text-xs font-medium text-gray-100 font-Oxygen'>Muhammad Ali</h2>
         </div>
 
 
-        <div className='flex tracking-wide py-3 cursor-pointer mr-10'>
+        <div className='flex tracking-wide py-3 cursor-pointer mr-2 lg:mr-10'>
           <ul className='flex text-xs items-center font-normal text-gray-200'>
             <li className='ml-4 mx-1 hover:text-gray-400'>Home</li>
             <li className='hidden lg:flex ml-4 mr-1 hover:text-gray-400'>Education</li>
