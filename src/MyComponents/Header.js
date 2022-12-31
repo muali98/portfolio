@@ -20,7 +20,7 @@ export const Header = () => {
         </div>
 
 
-        <div className='flex tracking-wide py-3 cursor-pointer mr-2 lg:mr-10'>
+        <div className='flex tracking-wide py-3 cursor-pointer mr-1 lg:mr-10'>
           <ul className='flex text-xs items-center font-normal text-gray-200'>
             <li className='ml-4 mx-1 hover:text-gray-400'>Home</li>
             <li className='hidden lg:flex ml-4 mr-1 hover:text-gray-400'>Education</li>
