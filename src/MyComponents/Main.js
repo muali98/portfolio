@@ -6,7 +6,7 @@ import Resume from "./../Media/Resume.pdf"
 export const Main = () => {
     return (
         <>
-            <h1 className="text-red-400 text-center tracking-wide text-sm md:text-xl ml-3 lg:ml-10 mr-3 lg:mr-9">This website is under development by Muhammad Ali, he is currently extremely busy with telecom core network projects! &emsp;  Until the full website is coded, please scroll down to see the resume!</h1>
+            <h1 className="text-red-400 text-center tracking-wide text-sm md:text-xl ml-3 lg:ml-10 mr-3 lg:mr-9">This website is under development by Muhammad Ali, he is currently busy with telecom core network projects! &emsp;  Until the full website is coded, please scroll down to see the resume!</h1>
 
             <div className='relative hidden sm:flex'>
                 <div className="absolute top-24 lg:top-48 left-12 lg:left-24">
