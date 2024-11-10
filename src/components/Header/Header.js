@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 export const Header = () => {
@@ -16,7 +16,12 @@ export const Header = () => {
     }
   };
 
-  const navItems = ['Home', 'Introduction', 'Education', 'Experience', 'Projects', 'Research', 'Visits', 'Awards', 'Skills', 'Leadership', 'Courses', 'Language', 'Gallery', 'Contact'];
+  // Memoize the navItems array to prevent it from changing on every render
+  const navItems = useMemo(() => [
+    'Home', 'Introduction', 'Education', 'Experience', 'Projects', 
+    'Research', 'Visits', 'Awards', 'Skills', 'Leadership', 
+    'Courses', 'Language', 'Gallery', 'Contact'
+  ], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +59,7 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, [isMobile, navItems]); // Ensure navItems is included to avoid ESLint warnings
+  }, [isMobile, navItems]); // navItems is stable due to useMemo, preventing unnecessary re-renders
 
   return (
     <nav className={`fixed z-50 transition-all duration-300 
