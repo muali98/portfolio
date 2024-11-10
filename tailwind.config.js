@@ -17,9 +17,11 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
-        'vibes': ['Great Vibes', 'cursive']
+        'vibes': ['Great Vibes', 'cursive'],
+        'trebuchet': ['Trebuchet MS', 'sans-serif'],
       }
     },
   },
   plugins: [],
 }
+
