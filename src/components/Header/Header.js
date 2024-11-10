@@ -11,16 +11,19 @@ export const Header = () => {
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    if (section) window.scrollTo({ top: section.offsetTop - 80, behavior: 'smooth' });
+    if (section) {
+      window.scrollTo({ top: section.offsetTop - 80, behavior: 'smooth' });
+    }
   };
 
   const navItems = ['Home', 'Introduction', 'Education', 'Experience', 'Projects', 'Research', 'Visits', 'Awards', 'Skills', 'Leadership', 'Courses', 'Language', 'Gallery', 'Contact'];
 
-
   useEffect(() => {
     const handleScroll = () => {
       const homeSection = document.getElementById('home');
-      if (homeSection) setIsHome(homeSection.getBoundingClientRect().top >= -homeSection.offsetHeight);
+      if (homeSection) {
+        setIsHome(homeSection.getBoundingClientRect().top >= -homeSection.offsetHeight);
+      }
 
       const sectionOffsets = navItems.map((name) => {
         const section = document.getElementById(name.toLowerCase());
@@ -36,10 +39,14 @@ export const Header = () => {
           window.scrollY >= offsetTop - 100 && window.scrollY < offsetTop + offsetHeight - 100
       );
 
-      if (current) setCurrentSection(current.name.toLowerCase());
+      if (current) {
+        setCurrentSection(current.name.toLowerCase());
+      }
     };
 
-    const handleResize = () => setIsMobile(window.innerWidth < 1024);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
@@ -47,24 +54,25 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, [isMobile], [navItems]);
+  }, [isMobile, navItems]); // Ensure navItems is included to avoid ESLint warnings
 
-  
   return (
     <nav className={`fixed z-50 transition-all duration-300 
-      ${isHome ? 'top-0 left-0 right-0 bg-transparent'
-          : isMobile ? 'top-0 left-0 right-0 bg-nav'
-            : 'lg:top-0 lg:left-0 lg:w-[18%] lg:h-screen lg:bg-nav'}`}>
-
+      ${isHome ? 'top-0 left-0 right-0 bg-transparent' 
+      : isMobile ? 'top-0 left-0 right-0 bg-nav' 
+      : 'lg:top-0 lg:left-0 lg:w-[18%] lg:h-screen lg:bg-nav'}`}>
+      
       {/* Desktop Navigation */}
       {!isMobile && (
-        <div className={`flex ${isHome ? 'items-center justify-between mx-auto px-10 pt-3' : 'lg:flex-col lg:items-end lg:justify-center lg:h-screen lg:p-20'}`}>
+        <div className={`flex ${isHome ? 'items-center justify-between mx-auto px-10 pt-3' 
+        : 'lg:flex-col lg:items-end lg:justify-center lg:h-screen lg:p-20'}`}>
           {isHome && (
             <div onClick={() => scrollToSection('home')} className="cursor-pointer py-3">
               <h2 className="text-lg font-semibold text-gray-100 font-Oxygen">Muhammad Ali</h2>
             </div>
           )}
-          <div className={`flex ${isHome ? 'space-x-6 text-sm' : 'lg:flex-col lg:items-end lg:space-y-6 lg:text-lg lg:font-semibold lg:text-green-100 lg:tracking-widest '}`}>
+          <div className={`flex ${isHome ? 'space-x-6 text-sm' 
+          : 'lg:flex-col lg:items-end lg:space-y-6 lg:text-lg lg:font-semibold lg:text-green-100 lg:tracking-widest '}`}>
             {navItems.map((name) => (
               <span
                 key={name}
