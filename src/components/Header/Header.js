@@ -14,6 +14,9 @@ export const Header = () => {
     if (section) window.scrollTo({ top: section.offsetTop - 80, behavior: 'smooth' });
   };
 
+  const navItems = ['Home', 'Introduction', 'Education', 'Experience', 'Projects', 'Research', 'Visits', 'Awards', 'Skills', 'Leadership', 'Courses', 'Language', 'Gallery', 'Contact'];
+
+
   useEffect(() => {
     const handleScroll = () => {
       const homeSection = document.getElementById('home');
@@ -44,10 +47,9 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, [isMobile]);
+  }, [isMobile], [navItems]);
 
-  const navItems = ['Home', 'Introduction', 'Education', 'Experience', 'Projects', 'Research', 'Visits', 'Awards', 'Skills', 'Leadership', 'Courses', 'Language', 'Gallery', 'Contact'];
-
+  
   return (
     <nav className={`fixed z-50 transition-all duration-300 
       ${isHome ? 'top-0 left-0 right-0 bg-transparent'
