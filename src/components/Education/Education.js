@@ -69,7 +69,7 @@ export const Education = () => {
                     title="B.S. Electrical and Electronics Engineering"
                     description="Pakistan Institute of Engineering and Applied Sciences (PIEAS)"
                     duration="Sep 2018 - June 2022 | Distinction with 2nd position"
-                    additionalInfo="CGPA: 3.74 / 4.00"
+                    additionalInfo="CGPA: 3.74 /4.00"
                 />
 
                 {/* FDC - Matriculation */}
