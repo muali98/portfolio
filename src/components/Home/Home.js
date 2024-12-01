@@ -78,8 +78,10 @@ export const Home = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Top-Left Corner Text with Blue Glow */}
       <div
-    className="absolute top-16 left-10 text-lg lg:top-20 lg:left-16 lg:text-xl z-20 font-bold"
+    className="absolute top-16 left-10 text-sm lg:top-20 lg:left-16 lg:text-xl z-20 font-bold"
 >
+
+  
     <span className="text-red-500 drop-shadow-[0_0_8px_rgba(59,130,246,1)]">
         A blend of Professional and Personal Journey
     </span>
