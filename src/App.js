@@ -17,14 +17,14 @@ import { Language } from './components/Language/Language';
 import { Gallery } from './components/Gallery/Gallery';
 import { Contact } from './components/Contact/Contact';
 
-import { Educationjunk } from './components/Education_junk/Education_junk';
+//import { Educationjunk } from './components/Education_junk/Education_junk';
 
 const sectionsData = {
   home: <Home />,
   introduction: <Intro />,
   education: <Education />,
 
-  educationjunk:<Educationjunk/>,
+  //educationjunk:<Educationjunk/>,
 
   experience: <Experience />,
   projects: <Projects />,
