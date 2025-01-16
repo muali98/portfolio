@@ -45,7 +45,7 @@ const sections = [
   { id: 'introduction', displayName: 'Introduction' },
   { id: 'education', displayName: 'Education' },
 
-  { id: 'educationjunk', displayName: 'Educationjunk' },
+  //{ id: 'educationjunk', displayName: 'Educationjunk' },
 
   { id: 'experience', displayName: 'Work Experience' },
   //{ id: 'projects', displayName: 'My Projects' },
